@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/project_deploy/static/css/main.a72abd44.css",
-    "main.js": "/project_deploy/static/js/main.2c65cf7d.js",
-    "static/media/model-1.gif": "/project_deploy/static/media/model-1.e34e4be653a5c6d72812.gif",
-    "static/media/texttoVideo.gif": "/project_deploy/static/media/texttoVideo.4a89126d778320f61b17.gif",
-    "static/media/model-2.gif": "/project_deploy/static/media/model-2.1a4ae2e9a46b45871cf7.gif",
-    "static/media/imagetotext.jpg": "/project_deploy/static/media/imagetotext.3f3c1ce31756efaf5c3f.jpg",
-    "static/media/model-1.jpg": "/project_deploy/static/media/model-1.3f3c1ce31756efaf5c3f.jpg",
-    "static/media/video-to-video-collect.png": "/project_deploy/static/media/video-to-video-collect.282b8cf858029db6fa39.png",
-    "static/media/ImageToVideo.png": "/project_deploy/static/media/ImageToVideo.f0435eabf6e56956bd79.png",
-    "static/media/model-1.png": "/project_deploy/static/media/model-1.bb22a3063b041c789f22.png",
-    "static/media/ImageToImage.png": "/project_deploy/static/media/ImageToImage.c4ab93f04689cf145cda.png",
-    "static/media/airoboros.png": "/project_deploy/static/media/airoboros.8d8d40d64bb23771bc57.png",
-    "static/media/stable-diffusion.png": "/project_deploy/static/media/stable-diffusion.cf91deeb8f76eff0930a.png",
-    "static/media/textToImage.png": "/project_deploy/static/media/textToImage.194a02d400626aa5f376.png",
-    "static/media/textToText.png": "/project_deploy/static/media/textToText.b5060872782498c708b8.png",
-    "static/media/TextToSpeech.png": "/project_deploy/static/media/TextToSpeech.26e9cdb7bfe8076bc26f.png",
-    "static/media/VideoToText.png": "/project_deploy/static/media/VideoToText.413aa9e8ce1447f676c5.png",
-    "static/media/videotoImage.png": "/project_deploy/static/media/videotoImage.0505e507f75d0e4c1f8e.png",
-    "static/media/SpeechToText.png": "/project_deploy/static/media/SpeechToText.bb22a3063b041c789f22.png",
-    "index.html": "/project_deploy/index.html",
-    "main.a72abd44.css.map": "/project_deploy/static/css/main.a72abd44.css.map",
-    "main.2c65cf7d.js.map": "/project_deploy/static/js/main.2c65cf7d.js.map"
+    "main.css": "/projectdeploy/static/css/main.a72abd44.css",
+    "main.js": "/projectdeploy/static/js/main.f11ad7ee.js",
+    "static/media/model-1.gif": "/projectdeploy/static/media/model-1.e34e4be653a5c6d72812.gif",
+    "static/media/texttoVideo.gif": "/projectdeploy/static/media/texttoVideo.4a89126d778320f61b17.gif",
+    "static/media/model-2.gif": "/projectdeploy/static/media/model-2.1a4ae2e9a46b45871cf7.gif",
+    "static/media/imagetotext.jpg": "/projectdeploy/static/media/imagetotext.3f3c1ce31756efaf5c3f.jpg",
+    "static/media/model-1.jpg": "/projectdeploy/static/media/model-1.3f3c1ce31756efaf5c3f.jpg",
+    "static/media/video-to-video-collect.png": "/projectdeploy/static/media/video-to-video-collect.282b8cf858029db6fa39.png",
+    "static/media/ImageToVideo.png": "/projectdeploy/static/media/ImageToVideo.f0435eabf6e56956bd79.png",
+    "static/media/model-1.png": "/projectdeploy/static/media/model-1.bb22a3063b041c789f22.png",
+    "static/media/ImageToImage.png": "/projectdeploy/static/media/ImageToImage.c4ab93f04689cf145cda.png",
+    "static/media/airoboros.png": "/projectdeploy/static/media/airoboros.8d8d40d64bb23771bc57.png",
+    "static/media/stable-diffusion.png": "/projectdeploy/static/media/stable-diffusion.cf91deeb8f76eff0930a.png",
+    "static/media/textToImage.png": "/projectdeploy/static/media/textToImage.194a02d400626aa5f376.png",
+    "static/media/textToText.png": "/projectdeploy/static/media/textToText.b5060872782498c708b8.png",
+    "static/media/TextToSpeech.png": "/projectdeploy/static/media/TextToSpeech.26e9cdb7bfe8076bc26f.png",
+    "static/media/VideoToText.png": "/projectdeploy/static/media/VideoToText.413aa9e8ce1447f676c5.png",
+    "static/media/videotoImage.png": "/projectdeploy/static/media/videotoImage.0505e507f75d0e4c1f8e.png",
+    "static/media/SpeechToText.png": "/projectdeploy/static/media/SpeechToText.bb22a3063b041c789f22.png",
+    "index.html": "/projectdeploy/index.html",
+    "main.a72abd44.css.map": "/projectdeploy/static/css/main.a72abd44.css.map",
+    "main.f11ad7ee.js.map": "/projectdeploy/static/js/main.f11ad7ee.js.map"
   },
   "entrypoints": [
     "static/css/main.a72abd44.css",
-    "static/js/main.2c65cf7d.js"
+    "static/js/main.f11ad7ee.js"
   ]
 }
