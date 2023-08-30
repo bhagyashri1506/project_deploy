@@ -106,11 +106,6 @@ function App() {
             <Route path="videotoimage" element={ <VideoToImageCollect/>} />
             <Route path="videotovideo" element={ <VideoToVideoCollect/>} />
           </Route>
-          
-          
-
-        </Routes>
-        <Routes>
             <Route path="collection/texttotextresult" element={ <TextToTextresult/>} >
               <Route path="demo" element={ <Demo/>} />
               <Route path="api" element={ <Api/>} />
