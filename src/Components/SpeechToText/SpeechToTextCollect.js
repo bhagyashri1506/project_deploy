@@ -8,7 +8,7 @@ const SpeechToTextCollect = () => {
       <p class="mb-12">Models that generate Speech to Text</p>
       <div class="my-6">
         <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 grid-flow-row auto-rows-max gap-12 ">
-          <SpeechToTextModel1/>
+          <SpeechToTextModel1 />
       
 
         </div>

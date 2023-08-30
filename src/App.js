@@ -91,7 +91,7 @@ function App() {
   return (
     <div className="App">
       <Headers/>
-      <BrowserRouter>
+      <BrowserRouter basename='/'>
         <Routes>
           <Route path="/" element={ <Explore/>} />
             <Route path="collection" exact element={ <Collections/>} >

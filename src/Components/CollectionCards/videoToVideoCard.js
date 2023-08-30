@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const VideoToVideoCard = () => {
   return (
-    <>
+
       <div className="inline-grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="h-40">
           <Link
@@ -11,7 +11,7 @@ const VideoToVideoCard = () => {
             title="Video to Video"
           >
             <img
-              src="https://tjzk.replicate.delivery/models_collections_cover_image/audio-generation.png"
+              // src="https://tjzk.replicate.delivery/models_collections_cover_image/audio-generation.png"
               alt=""
               role="presentation"
               className="object-cover object-center w-full h-full block align-middle lazy entered loaded"
@@ -36,7 +36,7 @@ const VideoToVideoCard = () => {
           </p>
         </div>
       </div>
-    </>
+
   );
 };
 

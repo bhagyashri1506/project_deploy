@@ -3,7 +3,7 @@ import { GoRocket } from 'react-icons/go';
 
 const ImageToVideoModel1 = () => {
   return (
-    <>
+
     <a
             class="no-underline flex flex-col "
             href="/collection/imagetovideoresult/demo"
@@ -34,7 +34,7 @@ const ImageToVideoModel1 = () => {
               </div>
             </div>
           </a>
-    </>
+
       
 
   );
