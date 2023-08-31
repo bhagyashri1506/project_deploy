@@ -17,7 +17,7 @@ const Header = () => {
         <div className="hidden md:block text-right flex-grow">
           <nav className="flex justify-end items-start">
             <div className="glass flex flex-wrap justify-end">
-              <a href="/" className=" hover:text-black px-3.5 inline-block align-top leading-10 text-[#00000073]">
+              <a href="#" className=" hover:text-black px-3.5 inline-block align-top leading-10 text-[#00000073]">
                 Explore
               </a>
               <a href="#" className=" px-3.5 hover:text-black inline-block align-top leading-10 text-[#00000073]">

@@ -1,7 +1,9 @@
 import InputOutputHeader from "../../InputOutputHeader";
 import { Outlet } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const VideoToImageResult = () => {
+  const navigate = useNavigate();
   return (
     <>
       <InputOutputHeader />
@@ -176,8 +178,11 @@ const VideoToImageResult = () => {
         </header>
         <div className="tabs flex gap-2 md:gap-2lh mb-lh md:mb-2lh border-b border-hairline">
           <a
-            className="tab "
-            href="/collection/speechtotextresult/demo"
+            className="tab"
+            onClick={() => {
+              navigate("/collect/videotoimageresult/demo");
+            }}
+            style={{ cursor: "pointer" }}
           >
             <svg
               className="icon"
@@ -195,8 +200,13 @@ const VideoToImageResult = () => {
             </svg>
             Demo
           </a>
-
-          <a className="tab " href="/collection/speechtotextresult/api">
+          <a
+            className="tab"
+            onClick={() => {
+              navigate("/collect/videotoimageresult/api");
+            }}
+            style={{ cursor: "pointer" }}
+          >
             <svg
               className="icon"
               height="24"
@@ -212,8 +222,13 @@ const VideoToImageResult = () => {
             </svg>
             API
           </a>
-
-          <a className="tab " href="/collection/speechtotextresult/example">
+          <a
+            className="tab"
+            onClick={() => {
+              navigate("/collect/videotoimageresult/example");
+            }}
+            style={{ cursor: "pointer" }}
+          >
             <svg
               className="icon"
               fill="none"
@@ -232,8 +247,13 @@ const VideoToImageResult = () => {
             </svg>
             Examples
           </a>
-
-          <a className="tab " href="/collection/speechtotextresult/versions">
+          <a
+            className="tab"
+            onClick={() => {
+              navigate("/collect/videotoimageresult/versions");
+            }}
+            style={{ cursor: "pointer" }}
+          >
             <svg
               className="icon"
               fill="none"

@@ -1,7 +1,9 @@
 import InputOutputHeader from "../../InputOutputHeader";
 import { Outlet } from "react-router-dom";
 
+import { useNavigate } from "react-router-dom/dist"; 
 const TextToTextresult = () => {
+  const navigate=useNavigate();
   return (
     <>
       <InputOutputHeader />
@@ -130,7 +132,11 @@ const TextToTextresult = () => {
           </hgroup>
         </header>
         <div class="tabs flex gap-2 md:gap-2lh mb-lh md:mb-2lh border-b border-hairline">
-          <a href="/collection/texttotextresult/demo" class="tab">
+          <a onClick={()=>{
+              navigate('/collect/texttotextresult/demo')
+            }}
+            style={{cursor:"pointer"}}
+            class="tab">
             <svg
               class="icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +154,11 @@ const TextToTextresult = () => {
             Demo
           </a>
 
-          <a href="/collection/texttotextresult/api" class="tab ">
+          <a onClick={()=>{
+              navigate('/collect/texttotextresult/api')
+            }}
+            style={{cursor:"pointer"}}
+            class="tab">
             <svg
               class="icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +175,11 @@ const TextToTextresult = () => {
             API
           </a>
 
-          <a href="/collection/texttotextresult/example" class="tab ">
+          <a onClick={()=>{
+              navigate('/collect/texttotextresult/example')
+            }}
+            style={{cursor:"pointer"}}
+            class="tab">
             <svg
               class="icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -184,7 +198,11 @@ const TextToTextresult = () => {
             Examples
           </a>
 
-          <a href="/collection/texttotextresult/versions" class="tab ">
+          <a onClick={()=>{
+              navigate('/collect/texttotextresult/versions')
+            }}
+            style={{cursor:"pointer"}}
+            class="tab">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

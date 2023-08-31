@@ -1,4 +1,4 @@
-import { BrowserRouter,Router, Routes } from 'react-router-dom';
+import { HashRouter, Router, Routes } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import Headers from './Components/Header';
 import Explore from './Pages/Explore';
@@ -77,7 +77,7 @@ import VToIVersion from './Components/VideoToImage/Models/Version';
 
 import VideoToVideo2Result from './Components/VideoToVideo/Models/arielreplicate/VideoToVideo2Result';
 import VToV2Demo from './Components/VideoToVideo/Models/arielreplicate/Demo';
-import VToV2Api from './Components/VideoToVideo/Models/Pollination/Api';
+import VToV2Api from './Components/VideoToVideo/Models/arielreplicate/Api';
 import VToV2Example from './Components/VideoToVideo/Models/arielreplicate/Example';
 import VToV2Version from './Components/VideoToVideo/Models/arielreplicate/Version';
 
@@ -86,101 +86,102 @@ import VToV1Demo from './Components/VideoToVideo/Models/Pollination/Demo';
 import VToV1Api from './Components/VideoToVideo/Models/Pollination/Api';
 import VToV1Example from './Components/VideoToVideo/Models/Pollination/Example';
 import VToV1Version from './Components/VideoToVideo/Models/Pollination/Version';
- 
+
 function App() {
   return (
     <div className="App">
-      <Headers/>
-      <BrowserRouter basename='/'>
-        <Routes>
+      <Headers />
+      <HashRouter >
+      <Routes>
           <Route path="/" element={ <Explore/>} />
-            <Route path="collection" exact element={ <Collections/>} >
-            <Route path="imagetoimage" element={ <ImageToImageCollect/>} />
-            <Route path="imagetotext" element={ <ImageToTextCollect/>} />
-            <Route path="imagetovideo" element={ <ImageToVideoCollect/>} />
-            <Route path="speechtotext" element={ <SpeechToTextCollect/>} />
-            <Route path="texttoimage" element={ <TextToImageCollect/>} />
-            <Route path="texttospeech" element={ <TextToSpeechCollect/>} />
-            <Route path="texttotext" element={ <TextToTextCollect/>} />
-            <Route path="texttovideo" element={ <TextToVideoCollect/>} />
-            <Route path="videotoimage" element={ <VideoToImageCollect/>} />
-            <Route path="videotovideo" element={ <VideoToVideoCollect/>} />
+            <Route path="/collection" element={ <Collections/>} >
+              <Route path="imagetoimage" element={ <ImageToImageCollect/>} />
+              <Route path="imagetotext" element={ <ImageToTextCollect/>} />
+              <Route path="imagetovideo" element={ <ImageToVideoCollect/>} />
+              <Route path="speechtotext" element={ <SpeechToTextCollect/>} />
+              <Route path="texttoimage" element={ <TextToImageCollect/>} />
+              <Route path="texttospeech" element={ <TextToSpeechCollect/>} />
+              <Route path="texttotext" element={ <TextToTextCollect/>} />
+              <Route path="texttovideo" element={ <TextToVideoCollect/>} />
+              <Route path="videotoimage" element={ <VideoToImageCollect/>} />
+              <Route path="videotovideo" element={ <VideoToVideoCollect/>} />
           </Route>
-            <Route path="collection/texttotextresult" element={ <TextToTextresult/>} >
-              <Route path="demo" element={ <Demo/>} />
-              <Route path="api" element={ <Api/>} />
-              <Route path="example" element={ <Example/>} />
-              <Route path="versions" element={ <Version/>} />
-            </Route>
-            <Route path="collection/texttovideoresult" element={ <TextToVideoResult/>} >
-              <Route path="demo" element={ <TToVDemo/>} />
-              <Route path="api" element={ <TToVApi/>} />
-              <Route path="example" element={ <TToVExample/>} />
-              <Route path="versions" element={ <TToVVersion/>} />
-            </Route>
-            <Route path="collection/texttospeechresult" element={ <TextToSpeechResult/>} >
-              <Route path="demo" element={ <TToSDemo/>} />
-              <Route path="api" element={ <TToSApi/>} />
-              <Route path="example" element={ <TToSExample/>} />
-              <Route path="versions" element={ <TToSVersion/>} />
-            </Route>
-            <Route path="collection/texttoimageresult" element={ <TextToImageResult/>} >
-              <Route path="demo" element={ <TToIDemo/>} />
-              <Route path="api" element={ <TToIApi/>} />
-              <Route path="example" element={ <TToIExample/>} />
-              <Route path="versions" element={ <TToIVersion/>} />
-            </Route>
-            <Route path="collection/imagetoimage1result" element={ <ImageToImage1Result/>} >
-              <Route path="demo" element={ <IToI1Demo/>} />
-              <Route path="api" element={ <IToI1Api/>} />
-              <Route path="example" element={ <IToI1Example/>} />
-              <Route path="versions" element={ <IToI1Version/>} />
-            </Route>
-            <Route path="collection/imagetoimage2result" element={ <ImageToImage2Result/>} >
-              <Route path="demo" element={ <IToI2Demo/>} />
-              <Route path="api" element={ <IToI2Api/>} />
-              <Route path="example" element={ <IToI2Example/>} />
-              <Route path="versions" element={ <IToI2Version/>} />
-            </Route>
-            <Route path="collection/imagetotextresult" element={ <ImageToTextResult/>} >
-              <Route path="demo" element={ <IToTDemo/>} />
-              <Route path="api" element={ <IToTApi/>} />
-              <Route path="example" element={ <IToTExample/>} />
-              <Route path="versions" element={ <IToTVersion/>} />
-            </Route>
-            <Route path="collection/imagetovideoresult" element={ <ImageToVideoResult/>} >
-              <Route path="demo" element={ <IToVDemo/>} />
-              <Route path="api" element={ <IToVApi/>} />
-              <Route path="example" element={ <IToVExample/>} />
-              <Route path="versions" element={ <IToVVersion/>} />
-            </Route>
-            <Route path="collection/speechtotextresult" element={ <SpeechToTextResult/>} >
-              <Route path="demo" element={ <SToTDemo/>} />
-              <Route path="api" element={ <SToTApi/>} />
-              <Route path="example" element={ <SToTExample/>} />
-              <Route path="versions" element={ <SToTVersion/>} />
-            </Route>
-            <Route path="collection/videotoimageresult" element={ <VideoToImageResult/>} >
-              <Route path="demo" element={ <VToIDemo/>} />
-              <Route path="api" element={ <VToIApi/>} />
-              <Route path="example" element={ <VToIExample/>} />
-              <Route path="versions" element={ <VToIVersion/>} />
-            </Route>
-            <Route path="collection/videotovideo1result" element={ <VideoToVideo1Result/>} >
-              <Route path="demo" element={ <VToV1Demo/>} />
-              <Route path="api" element={ <VToV1Api/>} />
-              <Route path="example" element={ <VToV1Example/>} />
-              <Route path="versions" element={ <VToV1Version/>} />
-            </Route>
-            <Route path="collection/videotovideo2result" element={ <VideoToVideo2Result/>} >
-              <Route path="demo" element={ <VToV2Demo/>} />
-              <Route path="api" element={ <VToV2Api/>} />
-              <Route path="example" element={ <VToV2Example/>} />
-              <Route path="versions" element={ <VToV2Version/>} />
-            </Route>
+        
+          <Route path="/collect/texttotextresult" element={ <TextToTextresult/>} >
+            <Route path="/collect/texttotextresult/demo" element={ <Demo/>} />
+            <Route path="/collect/texttotextresult/api" element={ <Api/>} />
+            <Route path="/collect/texttotextresult/example" element={ <Example/>} />
+            <Route path="/collect/texttotextresult/versions" element={ <Version/>} />
+          </Route>
+          <Route path="/collect/texttovideoresult" element={ <TextToVideoResult/>} >
+            <Route path="/collect/texttovideoresult/demo" element={ <TToVDemo/>} />
+            <Route path="/collect/texttovideoresult/api" element={ <TToVApi/>} />
+            <Route path="/collect/texttovideoresult/example" element={ <TToVExample/>} />
+            <Route path="/collect/texttovideoresult/versions" element={ <TToVVersion/>} />
+          </Route>
+          <Route path="/collect/texttospeechresult" element={ <TextToSpeechResult/>} >
+            <Route path="/collect/texttospeechresult/demo" element={ <TToSDemo/>} />
+            <Route path="/collect/texttospeechresult/api" element={ <TToSApi/>} />
+            <Route path="/collect/texttospeechresult/example" element={ <TToSExample/>} />
+            <Route path="/collect/texttospeechresult/versions" element={ <TToSVersion/>} />
+          </Route>
+          <Route path="/collect/texttoimageresult" element={ <TextToImageResult/>} >
+            <Route path="/collect/texttoimageresult/demo" element={ <TToIDemo/>} />
+            <Route path="/collect/texttoimageresult/api" element={ <TToIApi/>} />
+            <Route path="/collect/texttoimageresult/example" element={ <TToIExample/>} />
+            <Route path="/collect/texttoimageresult/versions" element={ <TToIVersion/>} />
+          </Route>
+          <Route path="/collect/imagetoimage1result" element={ <ImageToImage1Result/>} >
+            <Route path="/collect/imagetoimage1result/demo" element={ <IToI1Demo/>} />
+            <Route path="/collect/imagetoimage1result/api" element={ <IToI1Api/>} />
+            <Route path="/collect/imagetoimage1result/example" element={ <IToI1Example/>} />
+            <Route path="/collect/imagetoimage1result/versions" element={ <IToI1Version/>} />
+          </Route>
+          <Route path="/collect/imagetoimage2result" element={ <ImageToImage2Result/>} >
+            <Route path="/collect/imagetoimage2result/demo" element={ <IToI2Demo/>} />
+            <Route path="/collect/imagetoimage2result/api" element={ <IToI2Api/>} />
+            <Route path="/collect/imagetoimage2result/example" element={ <IToI2Example/>} />
+            <Route path="/collect/imagetoimage2result/versions" element={ <IToI2Version/>} />
+          </Route>
+          <Route path="/collect/imagetotextresult" element={ <ImageToTextResult/>} >
+            <Route path="/collect/imagetotextresult/demo" element={ <IToTDemo/>} />
+            <Route path="/collect/imagetotextresult/api" element={ <IToTApi/>} />
+            <Route path="/collect/imagetotextresult/example" element={ <IToTExample/>} />
+            <Route path="/collect/imagetotextresult/versions" element={ <IToTVersion/>} />
+          </Route>
+          <Route path="/collect/imagetovideoresult" element={ <ImageToVideoResult/>} >
+            <Route path="/collect/imagetovideoresult/demo" element={ <IToVDemo/>} />
+            <Route path="/collect/imagetovideoresult/api" element={ <IToVApi/>} />
+            <Route path="/collect/imagetovideoresult/example" element={ <IToVExample/>} />
+            <Route path="/collect/imagetovideoresult/versions" element={ <IToVVersion/>} />
+          </Route>
+          <Route path="/collect/speechtotextresult" element={ <SpeechToTextResult/>} >
+            <Route path="/collect/speechtotextresult/demo" element={ <SToTDemo/>} />
+            <Route path="/collect/speechtotextresult/api" element={ <SToTApi/>} />
+            <Route path="/collect/speechtotextresult/example" element={ <SToTExample/>} />
+            <Route path="/collect/speechtotextresult/versions" element={ <SToTVersion/>} />
+          </Route>
+          <Route path="/collect/videotoimageresult" element={ <VideoToImageResult/>} >
+            <Route path="/collect/videotoimageresult/demo" element={ <VToIDemo/>} />
+            <Route path="/collect/videotoimageresult/api" element={ <VToIApi/>} />
+            <Route path="/collect/videotoimageresult/example" element={ <VToIExample/>} />
+            <Route path="/collect/videotoimageresult/versions" element={ <VToIVersion/>} />
+          </Route>
+          <Route path="/collect/videotovideo1result" element={ <VideoToVideo1Result/>} >
+            <Route path="/collect/videotovideo1result/demo" element={ <VToV1Demo/>} />
+            <Route path="/collect/videotovideo1result/api" element={ <VToV1Api/>} />
+            <Route path="/collect/videotovideo1result/example" element={ <VToV1Example/>} />
+            <Route path="/collect/videotovideo1result/versions" element={ <VToV1Version/>} />
+          </Route>
+          <Route path="/collect/videotovideo2result" element={ <VideoToVideo2Result/>} >
+            <Route path="/collect/videotovideo2result/demo" element={ <VToV2Demo/>} />
+            <Route path="/collect/videotovideo2result/api" element={ <VToV2Api/>} />
+            <Route path="/collect/videotovideo2result/example" element={ <VToV2Example/>} />
+            <Route path="/collect/videotovideo2result/versions" element={ <VToV2Version/>} />
+          </Route>
         </Routes>
-      </BrowserRouter>
-      <Footer/>
+      </HashRouter>
+      <Footer />
     </div>
   );
 }

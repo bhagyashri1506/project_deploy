@@ -1,7 +1,9 @@
 import InputOutputHeader from "../../../InputOutputHeader";
 import { Outlet } from "react-router-dom";
+import { useNavigate } from "react-router-dom/dist";
 
 const ImageToImage2Result = () => {
+  const navigate = useNavigate();
   return (
     <>
       <InputOutputHeader />
@@ -203,9 +205,12 @@ const ImageToImage2Result = () => {
           </hgroup>
         </header>
         <div className="tabs flex gap-2 md:gap-2lh mb-lh md:mb-2lh border-b border-hairline">
-          <a
+           <a
             className="tab"
-            href="/collection/imagetoimage2result/demo"
+            onClick={() => {
+              navigate("/collect/imagetoimage2result/demo");
+            }}
+            style={{ cursor: "pointer" }}
           >
             <svg
               className="icon"
@@ -224,7 +229,13 @@ const ImageToImage2Result = () => {
             Demo
           </a>
 
-          <a className="tab " href="/collection/imagetoimage2result/api">
+           <a
+            className="tab"
+            onClick={() => {
+              navigate("/collect/imagetoimage2result/api");
+            }}
+            style={{ cursor: "pointer" }}
+          >
             <svg
               className="icon"
               height="24"
@@ -241,7 +252,13 @@ const ImageToImage2Result = () => {
             API
           </a>
 
-          <a className="tab " href="/collection/imagetoimage2result/example">
+          <a
+            className="tab"
+            onClick={() => {
+              navigate("/collect/imagetoimage2result/example");
+            }}
+            style={{ cursor: "pointer" }}
+          >
             <svg
               className="icon"
               fill="none"
@@ -261,7 +278,13 @@ const ImageToImage2Result = () => {
             Examples
           </a>
 
-          <a className="tab " href="/collection/imagetoimage2result/versions">
+          <a
+            className="tab"
+            onClick={() => {
+              navigate("/collect/imagetoimage2result/versions");
+            }}
+            style={{ cursor: "pointer" }}
+          >
             <svg
               className="icon"
               fill="none"

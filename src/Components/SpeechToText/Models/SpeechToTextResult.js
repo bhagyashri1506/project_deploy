@@ -1,7 +1,9 @@
 import InputOutputHeader from "../../InputOutputHeader";
 import { Outlet } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const SpeechToTextResult = () => {
+  const navigate = useNavigate();
   return (
     <>
       <InputOutputHeader />
@@ -176,8 +178,11 @@ const SpeechToTextResult = () => {
         </header>
         <div className="tabs flex gap-2 md:gap-2lh mb-lh md:mb-2lh border-b border-hairline">
           <a
-            className="tab "
-            href="/collection/speechtotextresult/demo"
+            className="tab"
+            onClick={() => {
+              navigate("/collect/speechtotextresult/demo");
+            }}
+            style={{ cursor: "pointer" }}
           >
             <svg
               className="icon"
@@ -196,7 +201,13 @@ const SpeechToTextResult = () => {
             Demo
           </a>
 
-          <a className="tab " href="/collection/speechtotextresult/api">
+          <a
+            className="tab"
+            onClick={() => {
+              navigate("/collect/speechtotextresult/api");
+            }}
+            style={{ cursor: "pointer" }}
+          >
             <svg
               className="icon"
               height="24"
@@ -213,7 +224,13 @@ const SpeechToTextResult = () => {
             API
           </a>
 
-          <a className="tab " href="/collection/speechtotextresult/example">
+          <a
+            className="tab"
+            onClick={() => {
+              navigate("/collect/speechtotextresult/example");
+            }}
+            style={{ cursor: "pointer" }}
+          >
             <svg
               className="icon"
               fill="none"
@@ -233,7 +250,13 @@ const SpeechToTextResult = () => {
             Examples
           </a>
 
-          <a className="tab " href="/collection/speechtotextresult/versions">
+          <a
+            className="tab"
+            onClick={() => {
+              navigate("/collect/speechtotextresult/versions");
+            }}
+            style={{ cursor: "pointer" }}
+          >
             <svg
               className="icon"
               fill="none"

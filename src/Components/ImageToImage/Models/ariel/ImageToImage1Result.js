@@ -1,7 +1,9 @@
 import InputOutputHeader from "../../../InputOutputHeader";
 import { Outlet } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const ImageToImage1result = () => {
+  const navigate = useNavigate();
   return (
     <>
       <InputOutputHeader />
@@ -205,7 +207,10 @@ const ImageToImage1result = () => {
         <div className="tabs flex gap-2 md:gap-2lh mb-lh md:mb-2lh border-b border-hairline">
           <a
             className="tab"
-            href="/collection/imagetoimage1result/demo"
+            onClick={() => {
+              navigate("/collect/imagetoimage1result/demo");
+            }}
+            style={{ cursor: "pointer" }}
           >
             <svg
               className="icon"
@@ -224,7 +229,13 @@ const ImageToImage1result = () => {
             Demo
           </a>
 
-          <a className="tab " href="/collection/imagetoimage1result/api">
+          <a
+            className="tab "
+            onClick={() => {
+              navigate("/collect/imagetoimage1result/api");
+            }}
+            style={{ cursor: "pointer" }}
+          >
             <svg
               className="icon"
               height="24"
@@ -241,7 +252,13 @@ const ImageToImage1result = () => {
             API
           </a>
 
-          <a className="tab " href="/collection/imagetoimage1result/example">
+          <a
+            className="tab "
+            onClick={() => {
+              navigate("/collect/imagetoimage1result/example");
+            }}
+            style={{ cursor: "pointer" }}
+          >
             <svg
               className="icon"
               fill="none"
@@ -261,7 +278,13 @@ const ImageToImage1result = () => {
             Examples
           </a>
 
-          <a className="tab " href="/collection/imagetoimage1result/versions">
+          <a
+            className="tab "
+            onClick={() => {
+              navigate("/collect/imagetoimage1result/versions");
+            }}
+            style={{ cursor: "pointer" }}
+          >
             <svg
               className="icon"
               fill="none"

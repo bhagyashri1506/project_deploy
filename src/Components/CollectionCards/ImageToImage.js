@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 const ImageToImageCard = () => {
+  
   return (
     <>
       <div className="inline-grid grid-cols-1 md:grid-cols-2 gap-6">

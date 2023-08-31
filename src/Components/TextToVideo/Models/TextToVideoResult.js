@@ -1,7 +1,9 @@
 import InputOutputHeader from "../../InputOutputHeader";
 import { Outlet } from "react-router-dom";
+import { useNavigate } from "react-router-dom/dist";
 
 const TextToVideoresult = () => {
+  const navigate = useNavigate();
   return (
     <>
       <InputOutputHeader />
@@ -179,9 +181,12 @@ const TextToVideoresult = () => {
           </hgroup>
         </header>
         <div className="tabs flex gap-2 md:gap-2lh mb-lh md:mb-2lh border-b border-hairline">
-          <a
-            className="tab selected"
-            href="/collection/texttovideoresult/demo"
+        <a
+            className="tab"
+            onClick={() => {
+              navigate("/collect/texttovideoresult/demo");
+            }}
+            style={{ cursor: "pointer" }}
           >
             <svg
               className="icon"
@@ -201,8 +206,11 @@ const TextToVideoresult = () => {
           </a>
 
           <a
-            className="tab "
-            href="/collection/texttovideoresult/api"
+            className="tab"
+            onClick={() => {
+              navigate("/collect/texttovideoresult/api");
+            }}
+            style={{ cursor: "pointer" }}
           >
             <svg
               className="icon"
@@ -221,8 +229,11 @@ const TextToVideoresult = () => {
           </a>
 
           <a
-            className="tab "
-            href="/collection/texttovideoresult/example"
+            className="tab"
+            onClick={() => {
+              navigate("/collect/texttovideoresult/example");
+            }}
+            style={{ cursor: "pointer" }}
           >
             <svg
               className="icon"
@@ -244,8 +255,11 @@ const TextToVideoresult = () => {
           </a>
 
           <a
-            className="tab "
-            href="/collection/texttovideoresult/versions"
+            className="tab"
+            onClick={() => {
+              navigate("/collect/texttovideoresult/versions");
+            }}
+            style={{ cursor: "pointer" }}
           >
             <svg
               className="icon"

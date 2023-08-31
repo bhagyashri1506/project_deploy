@@ -9,8 +9,6 @@ const TextToVideoCollect = () => {
       <div class="my-6">
         <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 grid-flow-row auto-rows-max gap-12 ">
          <TextToVideoModel1/>
-      
-
         </div>
       </div>
     </>

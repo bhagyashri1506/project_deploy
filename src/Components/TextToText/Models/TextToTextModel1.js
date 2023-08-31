@@ -1,12 +1,17 @@
 import React from "react";
 import { GoRocket } from "react-icons/go";
 
+import { useNavigate } from "react-router-dom"; 
 const TextToTextModel1 = () => {
+  const navigate=useNavigate();
   return (
     <>
       <a
         class="no-underline flex flex-col "
-        href="/collection/texttotextresult/demo"
+        onClick={()=>{
+          navigate('/collect/texttotextresult/demo')
+        }}
+        style={{cursor:"pointer"}}
       >
         <div class="h-80 mb-2">
           <div class=" h-full w-full overflow-hidden">

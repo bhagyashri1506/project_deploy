@@ -1,7 +1,9 @@
 import InputOutputHeader from "../../InputOutputHeader";
 import { Outlet } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const ImageToVideoresult = () => {
+  const navigate = useNavigate();
   return (
     <>
       <InputOutputHeader />
@@ -208,8 +210,11 @@ const ImageToVideoresult = () => {
         </header>
         <div className="tabs flex gap-2 md:gap-2lh mb-lh md:mb-2lh border-b border-hairline">
           <a
-            className="tab "
-            href="/collection/imagetovideoresult/demo"
+            className="tab"
+            onClick={() => {
+              navigate("/collect/imagetovideoresult/demo");
+            }}
+            style={{ cursor: "pointer" }}
           >
             <svg
               className="icon"
@@ -227,8 +232,13 @@ const ImageToVideoresult = () => {
             </svg>
             Demo
           </a>
-
-          <a className="tab " href="/collection/imagetovideoresult/api">
+          <a
+            className="tab"
+            onClick={() => {
+              navigate("/collect/imagetovideoresult/api");
+            }}
+            style={{ cursor: "pointer" }}
+          >
             <svg
               className="icon"
               height="24"
@@ -244,8 +254,13 @@ const ImageToVideoresult = () => {
             </svg>
             API
           </a>
-
-          <a className="tab " href="/collection/imagetovideoresult/example">
+          <a
+            className="tab"
+            onClick={() => {
+              navigate("/collect/imagetovideoresult/example");
+            }}
+            style={{ cursor: "pointer" }}
+          >
             <svg
               className="icon"
               fill="none"
@@ -264,8 +279,13 @@ const ImageToVideoresult = () => {
             </svg>
             Examples
           </a>
-
-          <a className="tab " href="/collection/imagetovideoresult/versions">
+          <a
+            className="tab"
+            onClick={() => {
+              navigate("/collect/imagetovideoresult/versions");
+            }}
+            style={{ cursor: "pointer" }}
+          >
             <svg
               className="icon"
               fill="none"

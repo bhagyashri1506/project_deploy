@@ -4,18 +4,9 @@ const IToTDemo = () => {
   return (
     <>
       <div className="mb-2lh">
-        <script
-          dangerouslySetInnerHTML={{
-            __html:
-              '{"version": {"config": {"build": {"gpu": true, "cuda": "11.1.1", "cudnn": "8", "python_version": "3.8", "python_packages": ["imageio==2.9.0", "numpy==1.21.1", "opencv-python==4.5.3.56", "ipython==7.21.0", "torchvision==0.9.0", "torch==1.8.0", "tensorboardX==2.4"], "system_packages": ["libgl1-mesa-glx", "libglib2.0-0"]}, "predict": "predict.py:Predictor"}, "release_notes": null, "docker_image_id": "1da220059cf4eb1de6cdbca18378f1c34ae0fdfec8d18aa5570dd224b0d18284", "docker_image_name": "r8.im/hzwer/iccv2019-learningtopaint@sha256:1da220059cf4eb1de6cdbca18378f1c34ae0fdfec8d18aa5570dd224b0d18284", "openapi_schema": {"info": {"title": "Cog", "version": "0.1.0"}, "paths": {"/": {"get": {"summary": "Root", "responses": {"200": {"content": {"application/json": {"schema": {}}}, "description": "Successful Response"}}, "operationId": "root__get"}}, "/predictions": {"post": {"summary": "Predict", "responses": {"200": {"content": {"application/json": {"schema": {"type": "object", "title": "Response", "required": ["status"], "properties": {"error": {"type": "string", "title": "Error"}, "output": {"type": "string", "title": "Output", "format": "uri"}, "status": {"enum": ["processing", "succeeded", "failed"], "type": "string", "title": "Status", "description": "An enumeration."}}, "description": "The response body for a prediction"}}}, "description": "Successful Response"}, "422": {"content": {"application/json": {"schema": {"type": "object", "title": "HTTPValidationError", "properties": {"detail": {"type": "array", "items": {"type": "object", "title": "ValidationError", "required": ["loc", "msg", "type"], "properties": {"loc": {"type": "array", "items": {"anyOf": [{"type": "string"}, {"type": "integer"}]}, "title": "Location"}, "msg": {"type": "string", "title": "Message"}, "type": {"type": "string", "title": "Error Type"}}}, "title": "Detail"}}}}}, "description": "Validation Error"}}, "description": "Run a single prediction on the model", "operationId": "predict_predictions_post", "requestBody": {"content": {"application/json": {"schema": {"type": "object", "title": "Request", "properties": {"input": {"type": "object", "title": "Input", "required": ["image"], "properties": {"image": {"type": "string", "title": "Image", "format": "uri", "x-order": 0, "description": "input image"}, "renderer": {"enum": ["default", "triangle", "round", "bezierwotrans"], "type": "string", "title": "renderer", "description": "type of renderer", "default": "default", "x-order": 1}}}, "output_file_prefix": {"type": "string", "title": "Output File Prefix"}}, "description": "The request body for a prediction"}}}}}}}, "openapi": "3.0.2", "components": {"schemas": {"Input": {"type": "object", "title": "Input", "required": ["image"], "properties": {"image": {"type": "string", "title": "Image", "format": "uri", "x-order": 0, "description": "input image"}, "renderer": {"enum": ["default", "triangle", "round", "bezierwotrans"], "type": "string", "title": "renderer", "description": "type of renderer", "default": "default", "x-order": 1}}}, "Output": {"type": "string", "title": "Output", "format": "uri"}, "Status": {"enum": ["processing", "succeeded", "failed"], "type": "string", "title": "Status", "description": "An enumeration."}, "Request": {"type": "object", "title": "Request", "properties": {"input": {"type": "object", "title": "Input", "required": ["image"], "properties": {"image": {"type": "string", "title": "Image", "format": "uri", "x-order": 0, "description": "input image"}, "renderer": {"enum": ["default", "triangle", "round", "bezierwotrans"], "type": "string", "title": "renderer", "description": "type of renderer", "default": "default", "x-order": 1}}}, "output_file_prefix": {"type": "string", "title": "Output File Prefix"}}, "description": "The request body for a prediction"}, "Response": {"type": "object", "title": "Response", "required": ["status"], "properties": {"error": {"type": "string", "title": "Error"}, "output": {"type": "string", "title": "Output", "format": "uri"}, "status": {"enum": ["processing", "succeeded", "failed"], "type": "string", "title": "Status", "description": "An enumeration."}}, "description": "The response body for a prediction"}, "renderer": {"enum": ["default", "triangle", "round", "bezierwotrans"], "type": "string", "title": "renderer", "description": "An enumeration."}, "ValidationError": {"type": "object", "title": "ValidationError", "required": ["loc", "msg", "type"], "properties": {"loc": {"type": "array", "items": {"anyOf": [{"type": "string"}, {"type": "integer"}]}, "title": "Location"}, "msg": {"type": "string", "title": "Message"}, "type": {"type": "string", "title": "Error Type"}}}, "HTTPValidationError": {"type": "object", "title": "HTTPValidationError", "properties": {"detail": {"type": "array", "items": {"type": "object", "title": "ValidationError", "required": ["loc", "msg", "type"], "properties": {"loc": {"type": "array", "items": {"anyOf": [{"type": "string"}, {"type": "integer"}]}, "title": "Location"}, "msg": {"type": "string", "title": "Message"}, "type": {"type": "string", "title": "Error Type"}}}, "title": "Detail"}}}}}}, "model": {"absolute_url": "/hzwer/iccv2019-learningtopaint", "username": "hzwer", "name": "iccv2019-learningtopaint", "description": "Teach Machines to Paint", "visibility": "public", "is_run_only": false, "github_url": "https://github.com/megvii-research/ICCV2019-LearningToPaint", "paper_url": "https://www.arxiv-vanity.com/papers/1903.04411/", "arxiv_paper_id": "1903.04411", "cover_image": {"url": "https://replicate.delivery/mgxm/3107c8fd-00ee-42d1-9334-ed130e0d63a5/out.gif", "file_type": "image", "file_mimetype": "image/gif", "model_is_playable": false}, "latest_version_created_at": null, "default_example_uuid": "bjkmjyhddjd6la3sxpzlyuctle", "display_output_as_json": false}, "created_at": "2022-10-05T20:50:43.812Z"}, "model": {"absolute_url": "/hzwer/iccv2019-learningtopaint", "username": "hzwer", "name": "iccv2019-learningtopaint", "description": "Teach Machines to Paint", "visibility": "public", "is_run_only": false, "github_url": "https://github.com/megvii-research/ICCV2019-LearningToPaint", "paper_url": "https://www.arxiv-vanity.com/papers/1903.04411/", "arxiv_paper_id": "1903.04411", "cover_image": {"url": "https://replicate.delivery/mgxm/3107c8fd-00ee-42d1-9334-ed130e0d63a5/out.gif", "file_type": "image", "file_mimetype": "image/gif", "model_is_playable": false}, "latest_version_created_at": null, "default_example_uuid": "bjkmjyhddjd6la3sxpzlyuctle", "display_output_as_json": false}, "canCreateExample": false, "exampleCreateUrl": "/api/models/hzwer/iccv2019-learningtopaint/examples", "fileUploadUrlTemplate": "/api/upload/:filename", "isAuthenticated": false, "isOwner": false, "modelAbsolutePath": "/hzwer/iccv2019-learningtopaint", "predictUrl": "/api/models/hzwer/iccv2019-learningtopaint/versions/1da220059cf4eb1de6cdbca18378f1c34ae0fdfec8d18aa5570dd224b0d18284/predictions", "signInRequiredToRun": false, "initialPrediction": {"uuid": "bjkmjyhddjd6la3sxpzlyuctle", "version_id": "690cd9bfaecc6f227a4ee3cc5b5516f3859d6915125101144a7c241be4cbfc9c", "created_at": "2021-08-27T22:52:53.259Z", "updated_at": "2022-05-31T22:19:27.746Z", "completed_at": "2021-08-27T22:56:23.984Z", "status": "succeeded", "inputs": {"image": "https://replicate.delivery/mgxm/175a4668-2151-40e5-8499-e6e84af10542/lisa.png", "renderer": "triangle"}, "output": [{"file": "https://replicate.delivery/mgxm/3107c8fd-00ee-42d1-9334-ed130e0d63a5/out.gif"}], "output_files": ["https://replicate.delivery/mgxm/3107c8fd-00ee-42d1-9334-ed130e0d63a5/out.gif"], "is_training": false, "error": null, "metrics": {}, "run_logs": "canvas step 0, L2Loss = 0.03997287154197693\ncanvas step 1, L2Loss = 0.022229744121432304\ncanvas step 2, L2Loss = 0.01675523817539215\ncanvas step 3, L2Loss = 0.013573813252151012\ncanvas step 4, L2Loss = 0.012320900335907936\ncanvas step 5, L2Loss = 0.011542919091880322\ncanvas step 6, L2Loss = 0.010394248180091381\ncanvas step 7, L2Loss = 0.00984362605959177\ncanvas step 8, L2Loss = 0.009365100413560867\ncanvas step 9, L2Loss = 0.008832967840135098\ncanvas step 10, L2Loss = 0.008636057376861572\ncanvas step 11, L2Loss = 0.008324887603521347\ncanvas step 12, L2Loss = 0.007920647971332073\ncanvas step 13, L2Loss = 0.007482276763767004\ncanvas step 14, L2Loss = 0.00717482715845108\ncanvas step 15, L2Loss = 0.007089617662131786\ncanvas step 16, L2Loss = 0.006491135340183973\ncanvas step 17, L2Loss = 0.006249904166907072\ncanvas step 18, L2Loss = 0.006046295166015625\ncanvas step 19, L2Loss = 0.005860033445060253\ncanvas step 20, L2Loss = 0.005872267764061689\ncanvas step 21, L2Loss = 0.00566840311512351\ncanvas step 22, L2Loss = 0.005612283945083618\ncanvas step 23, L2Loss = 0.005540042649954557\ncanvas step 24, L2Loss = 0.005471577402204275\ncanvas step 25, L2Loss = 0.005446691066026688\ncanvas step 26, L2Loss = 0.005451116245239973\ncanvas step 27, L2Loss = 0.00531425978988409\ncanvas step 28, L2Loss = 0.005194230005145073\ncanvas step 29, L2Loss = 0.005153748206794262\ncanvas step 30, L2Loss = 0.0051300255581736565\ncanvas step 31, L2Loss = 0.005130386911332607\ncanvas step 32, L2Loss = 0.005068782716989517\ncanvas step 33, L2Loss = 0.004991540685296059\ncanvas step 34, L2Loss = 0.0049132308922708035\ncanvas step 35, L2Loss = 0.004845760762691498\ncanvas step 36, L2Loss = 0.004773181863129139\ncanvas step 37, L2Loss = 0.004727147053927183\ncanvas step 38, L2Loss = 0.004669420421123505\ncanvas step 39, L2Loss = 0.004620404914021492\ndivided canvas step 0, L2Loss = 0.003307740669697523\ndivided canvas step 1, L2Loss = 0.003022675635293126\ndivided canvas step 2, L2Loss = 0.002739946125075221\ndivided canvas step 3, L2Loss = 0.0025829109363257885\ndivided canvas step 4, L2Loss = 0.0024592261761426926\ndivided canvas step 5, L2Loss = 0.0022820893209427595\ndivided canvas step 6, L2Loss = 0.0021267924457788467\ndivided canvas step 7, L2Loss = 0.002044535940513015\ndivided canvas step 8, L2Loss = 0.0019409225787967443\ndivided canvas step 9, L2Loss = 0.0018689618445932865\ndivided canvas step 10, L2Loss = 0.0018029434140771627\ndivided canvas step 11, L2Loss = 0.0017460198141634464\ndivided canvas step 12, L2Loss = 0.001700163003988564\ndivided canvas step 13, L2Loss = 0.001670832629315555\ndivided canvas step 14, L2Loss = 0.001637538312934339\ndivided canvas step 15, L2Loss = 0.0016061669448390603\ndivided canvas step 16, L2Loss = 0.0015731289749965072\ndivided canvas step 17, L2Loss = 0.0015442294534295797\ndivided canvas step 18, L2Loss = 0.0015228502452373505\ndivided canvas step 19, L2Loss = 0.001496538519859314\ndivided canvas step 20, L2Loss = 0.0014746275264769793\ndivided canvas step 21, L2Loss = 0.001459478517062962\ndivided canvas step 22, L2Loss = 0.001444359077140689\ndivided canvas step 23, L2Loss = 0.0014375821920111775\ndivided canvas step 24, L2Loss = 0.0014250167878344655\ndivided canvas step 25, L2Loss = 0.0014068989548832178\ndivided canvas step 26, L2Loss = 0.0013894503936171532\ndivided canvas step 27, L2Loss = 0.0013786253985017538\ndivided canvas step 28, L2Loss = 0.001360491500236094\ndivided canvas step 29, L2Loss = 0.001350260223262012\ndivided canvas step 30, L2Loss = 0.0013426643563434482\ndivided canvas step 31, L2Loss = 0.0013279904378578067\ndivided canvas step 32, L2Loss = 0.0013150947634130716\ndivided canvas step 33, L2Loss = 0.0013005108339712024\ndivided canvas step 34, L2Loss = 0.0012901554582640529\ndivided canvas step 35, L2Loss = 0.0012693328317254782\ndivided canvas step 36, L2Loss = 0.0012676238548010588\ndivided canvas step 37, L2Loss = 0.0012575527653098106\ndivided canvas step 38, L2Loss = 0.0012474938994273543\ndivided canvas step 39, L2Loss = 0.0012422115541994572\ngenerating gif", "version": {"config": {"build": {"gpu": true, "cuda": "11.1", "cudnn": "8", "python_version": "3.8", "python_packages": ["imageio==2.9.0", "numpy==1.21.1", "opencv-python==4.5.3.56", "ipython==7.21.0", "torchvision==0.9.0", "torch==1.8.0", "tensorboardX==2.4"], "system_packages": ["libgl1-mesa-glx", "libglib2.0-0"]}, "predict": "predict.py:Predictor"}, "release_notes": null, "docker_image_id": "690cd9bfaecc6f227a4ee3cc5b5516f3859d6915125101144a7c241be4cbfc9c", "docker_image_name": "r8.im/hzwer/iccv2019-learningtopaint@sha256:690cd9bfaecc6f227a4ee3cc5b5516f3859d6915125101144a7c241be4cbfc9c", "openapi_schema": {"components": {"schemas": {"Input": {"type": "object", "properties": {"image": {"type": "string", "format": "uri", "x-order": 0, "description": "input image"}, "renderer": {"enum": ["default", "triangle", "round", "bezierwotrans"], "type": "string", "default": "default", "x-order": 1, "description": "type of renderer"}}}, "Output": {"type": "array", "items": {"type": "object", "properties": {"file": {"type": "string", "format": "uri", "x-order": 0}, "text": {"type": "string", "x-order": 1}}}, "x-cog-array-type": "iterator"}}}}, "model": {"absolute_url": "/hzwer/iccv2019-learningtopaint", "username": "hzwer", "name": "iccv2019-learningtopaint", "description": "Teach Machines to Paint", "visibility": "public", "is_run_only": false, "github_url": "https://github.com/megvii-research/ICCV2019-LearningToPaint", "paper_url": "https://www.arxiv-vanity.com/papers/1903.04411/", "arxiv_paper_id": "1903.04411", "cover_image": {"url": "https://replicate.delivery/mgxm/3107c8fd-00ee-42d1-9334-ed130e0d63a5/out.gif", "file_type": "image", "file_mimetype": "image/gif", "model_is_playable": false}, "latest_version_created_at": null, "default_example_uuid": "bjkmjyhddjd6la3sxpzlyuctle", "display_output_as_json": false}, "created_at": "2021-08-27T22:52:17.869Z"}, "user": {"username": "bfirsh", "url": "/bfirsh"}}, "replicateHost": "https://replicate.com", "canSharePrediction": true, "canDeletePrediction": false, "readonly": false}',
-          }}
-          id="react-component-props-d3377657-263d-45ad-a91e-88bd2d5137af"
-          type="application/json"
-        />
-
         <div
           data-component="VersionRun"
-          data-props="react-component-props-d3377657-263d-45ad-a91e-88bd2d5137af"
+          data-props="react-component-props-785db985-5330-4058-b520-41499ceaa594"
         >
           <div className="flex flex-col md:flex-row gap-2lh md:gap-lh">
             <div className="flex-1 min-w-0">
@@ -23,14 +14,14 @@ const IToTDemo = () => {
               <form action="#" noValidate>
                 <div className="mb-lh">
                   <a
-                    href="https://replicate.delivery/mgxm/175a4668-2151-40e5-8499-e6e84af10542/lisa.png"
+                    href="https://replicate.delivery/mgxm/0958ab0c-8d26-45f8-a5f1-a27a1f2259cc/baby.jpg"
                     rel="noreferrer"
                     target="_blank"
                   >
                     <img
-                      alt="https://replicate.delivery/mgxm/175a4668-2151-40e5-8499-e6e84af10542/lisa.png"
+                      alt="https://replicate.delivery/mgxm/0958ab0c-8d26-45f8-a5f1-a27a1f2259cc/baby.jpg"
                       className="lazy"
-                      src="https://replicate.delivery/mgxm/175a4668-2151-40e5-8499-e6e84af10542/lisa.png"
+                      src="https://replicate.delivery/mgxm/0958ab0c-8d26-45f8-a5f1-a27a1f2259cc/baby.jpg"
                     />
                   </a>
                 </div>
@@ -78,7 +69,7 @@ const IToTDemo = () => {
                       Drop a file or click to select
                       <div className="flex ">
                         <div className="text-sm truncate pt-1">
-                          https://replicate.delivery/mgxm/175a4668-2151-40e5-8499-e6e84af10542/lisa.png
+                          https://replicate.delivery/mgxm/0958ab0c-8d26-45f8-a5f1-a27a1f2259cc/baby.jpg
                         </div>
                         <button
                           className="flex-shrink pointer-events-auto hover:bg-black hover:text-white p-1 ml-1"
@@ -133,7 +124,7 @@ const IToTDemo = () => {
                   <p className="text-shade mt-1">input image</p>
                 </div>
                 <div className="mb-lh">
-                  <label className="block mb-2" htmlFor="input-renderer">
+                  <label className="block mb-2" htmlFor="input-cond_text">
                     <svg
                       className="inline-block mr-2 w-3 h-3"
                       fill="none"
@@ -147,27 +138,221 @@ const IToTDemo = () => {
                       width="24"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <line x1="8" x2="21" y1="6" y2="6" />
-                      <line x1="8" x2="21" y1="12" y2="12" />
-                      <line x1="8" x2="21" y1="18" y2="18" />
-                      <line x1="3" x2="3.01" y1="6" y2="6" />
-                      <line x1="3" x2="3.01" y1="12" y2="12" />
-                      <line x1="3" x2="3.01" y1="18" y2="18" />
+                      <polyline points="4 7 4 4 20 4 20 7" />
+                      <line x1="9" x2="15" y1="20" y2="20" />
+                      <line x1="12" x2="12" y1="4" y2="20" />
                     </svg>
-                    <code>renderer</code>
+                    <code>cond_text</code>
                   </label>
-                  <select
-                    className="form-select w-full"
-                    id="input-renderer"
-                    name="renderer"
-                  >
-                    <option value="" />
-                    <option value="default">default</option>
-                    <option value="triangle">triangle</option>
-                    <option value="round">round</option>
-                    <option value="bezierwotrans">bezierwotrans</option>
-                  </select>
-                  <p className="text-shade mt-1">type of renderer</p>
+                  <div>
+                    <textarea
+                      className="form-input w-full resize-none"
+                      defaultValue="Image of a"
+                      name="cond_text"
+                      style={{
+                        height: "49.3333px !important",
+                      }}
+                    />
+                  </div>
+                  <p className="text-shade mt-1">conditional text</p>
+                </div>
+                <div className="mb-lh">
+                  <label className="block mb-2" htmlFor="input-beam_size">
+                    <svg
+                      className="inline-block mr-2 w-3 h-3"
+                      fill="none"
+                      height="24"
+                      role="presentation"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <line x1="4" x2="20" y1="9" y2="9" />
+                      <line x1="4" x2="20" y1="15" y2="15" />
+                      <line x1="10" x2="8" y1="3" y2="21" />
+                      <line x1="16" x2="14" y1="3" y2="21" />
+                    </svg>
+                    <code>beam_size</code>
+                  </label>
+                  <fieldset className="flex" id="input-beam_size">
+                    <legend hidden>beam_size</legend>
+                    <input
+                      aria-label="beam_size"
+                      className="flex-none w-20 p-05lh mr-05lh border-shade border focus:outline-none focus:border-black"
+                      defaultValue="5"
+                      max="10"
+                      min="1"
+                      name="beam_size"
+                      step="1"
+                      type="number"
+                    />
+                    <input
+                      aria-label="beam_size"
+                      className="flex-grow"
+                      defaultValue="5"
+                      max="10"
+                      min="1"
+                      name="beam_size"
+                      step="1"
+                      type="range"
+                    />
+                  </fieldset>
+                  <p className="text-shade mt-1">
+                    Number of beams to use (minimum: 1; maximum: 10){" "}
+                  </p>
+                </div>
+                <div className="mb-lh">
+                  <label className="block mb-2" htmlFor="input-end_factor">
+                    <svg
+                      className="inline-block mr-2 w-3 h-3"
+                      fill="none"
+                      height="24"
+                      role="presentation"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <line x1="4" x2="20" y1="9" y2="9" />
+                      <line x1="4" x2="20" y1="15" y2="15" />
+                      <line x1="10" x2="8" y1="3" y2="21" />
+                      <line x1="16" x2="14" y1="3" y2="21" />
+                    </svg>
+                    <code>end_factor</code>
+                  </label>
+                  <fieldset className="flex" id="input-end_factor">
+                    <legend hidden>end_factor</legend>
+                    <input
+                      aria-label="end_factor"
+                      className="flex-none w-20 p-05lh mr-05lh border-shade border focus:outline-none focus:border-black"
+                      defaultValue="1.01"
+                      max="1.1"
+                      min="1"
+                      name="end_factor"
+                      step="0.01"
+                      type="number"
+                    />
+                    <input
+                      aria-label="end_factor"
+                      className="flex-grow"
+                      defaultValue="1.01"
+                      max="1.1"
+                      min="1"
+                      name="end_factor"
+                      step="0.01"
+                      type="range"
+                    />
+                  </fieldset>
+                  <p className="text-shade mt-1">
+                    Higher value for shorter captions (minimum: 1; maximum: 1.1){" "}
+                  </p>
+                </div>
+                <div className="mb-lh">
+                  <label className="block mb-2" htmlFor="input-max_seq_length">
+                    <svg
+                      className="inline-block mr-2 w-3 h-3"
+                      fill="none"
+                      height="24"
+                      role="presentation"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <line x1="4" x2="20" y1="9" y2="9" />
+                      <line x1="4" x2="20" y1="15" y2="15" />
+                      <line x1="10" x2="8" y1="3" y2="21" />
+                      <line x1="16" x2="14" y1="3" y2="21" />
+                    </svg>
+                    <code>max_seq_length</code>
+                  </label>
+                  <fieldset className="flex" id="input-max_seq_length">
+                    <legend hidden>max_seq_length</legend>
+                    <input
+                      aria-label="max_seq_length"
+                      className="flex-none w-20 p-05lh mr-05lh border-shade border focus:outline-none focus:border-black"
+                      defaultValue="15"
+                      max="20"
+                      min="1"
+                      name="max_seq_length"
+                      step="1"
+                      type="number"
+                    />
+                    <input
+                      aria-label="max_seq_length"
+                      className="flex-grow"
+                      defaultValue="15"
+                      max="20"
+                      min="1"
+                      name="max_seq_length"
+                      step="1"
+                      type="range"
+                    />
+                  </fieldset>
+                  <p className="text-shade mt-1">
+                    Maximum number of tokens to generate (minimum: 1; maximum:
+                    20){" "}
+                  </p>
+                </div>
+                <div className="mb-lh">
+                  <label className="block mb-2" htmlFor="input-ce_loss_scale">
+                    <svg
+                      className="inline-block mr-2 w-3 h-3"
+                      fill="none"
+                      height="24"
+                      role="presentation"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <line x1="4" x2="20" y1="9" y2="9" />
+                      <line x1="4" x2="20" y1="15" y2="15" />
+                      <line x1="10" x2="8" y1="3" y2="21" />
+                      <line x1="16" x2="14" y1="3" y2="21" />
+                    </svg>
+                    <code>ce_loss_scale</code>
+                  </label>
+                  <fieldset className="flex" id="input-ce_loss_scale">
+                    <legend hidden>ce_loss_scale</legend>
+                    <input
+                      aria-label="ce_loss_scale"
+                      className="flex-none w-20 p-05lh mr-05lh border-shade border focus:outline-none focus:border-black"
+                      defaultValue="0.2"
+                      max="0.6"
+                      min="0"
+                      name="ce_loss_scale"
+                      step="0.01"
+                      type="number"
+                    />
+                    <input
+                      aria-label="ce_loss_scale"
+                      className="flex-grow"
+                      defaultValue="0.2"
+                      max="0.6"
+                      min="0"
+                      name="ce_loss_scale"
+                      step="0.01"
+                      type="range"
+                    />
+                  </fieldset>
+                  <p className="text-shade mt-1">
+                    Scale of cross-entropy loss with un-shifted language model
+                    (maximum: 0.6){" "}
+                  </p>
                 </div>
                 <button className="form-button mr-2 relative" type="submit">
                   <span className="">Submit</span>
@@ -184,17 +369,13 @@ const IToTDemo = () => {
                   <figure>
                     <div className="">
                       <div>
-                        <a
-                          href="https://replicate.delivery/mgxm/3107c8fd-00ee-42d1-9334-ed130e0d63a5/out.gif"
-                          rel="noreferrer"
-                          target="_blank"
-                        >
-                          <img
-                            alt="file"
-                            className="lazy"
-                            src="https://replicate.delivery/mgxm/3107c8fd-00ee-42d1-9334-ed130e0d63a5/out.gif"
-                          />
-                        </a>
+                        <pre className="overflow-x-auto overflow-y-auto whitespace-pre-wrap max-h-96">
+                          <code className="output w-full">
+                            Best CLIP: Image of a baby sleeping in a green
+                            flower. Best fluency: Image of a baby sleeping in a
+                            green flower. Best mixed: Image of a baby.
+                          </code>
+                        </pre>
                       </div>
                     </div>
                     <datalist id="steplist">
@@ -250,14 +431,17 @@ const IToTDemo = () => {
                       <option>49</option>
                       <option>50</option>
                     </datalist>
-                    <figcaption className="pt-4 text-shade" />
+                    <figcaption className="pt-4 text-shade">
+                      Generated in <time dateTime="PT77.98S">77.98</time>{" "}
+                      seconds
+                    </figcaption>
                   </figure>
                 </output>
               </div>
               <div className="inline-block mr-3 mb-3">
                 <a
                   className="form-button-secondary"
-                  href="/signin?next=/hzwer/iccv2019-learningtopaint?prediction=bjkmjyhddjd6la3sxpzlyuctle"
+                  href="/signin?next=/yoadtew/zero-shot-image-to-text?prediction=mhjecpjikfbfhnpypayu32dhc4"
                 >
                   <svg
                     className="icon"
@@ -279,30 +463,9 @@ const IToTDemo = () => {
                 </a>
               </div>
               <div className="inline-block mr-3 mb-3">
-                <button className="form-button-secondary">
-                  <svg
-                    className="icon"
-                    fill="none"
-                    height="24"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
-                    <polyline points="7 10 12 15 17 10" />
-                    <line x1="12" x2="12" y1="15" y2="3" />
-                  </svg>{" "}
-                  Download
-                </button>
-              </div>
-              <div className="inline-block mr-3 mb-3">
                 <a
                   className="form-button-secondary mb-lh"
-                  href="/p/bjkmjyhddjd6la3sxpzlyuctle/report"
+                  href="/p/mhjecpjikfbfhnpypayu32dhc4/report"
                 >
                   <svg
                     className="icon"
@@ -345,59 +508,6 @@ const IToTDemo = () => {
           </div>
         </div>
       </div>
-      <div className="pb-2 border-b border-hairline mb-lh flex">
-        <h4 className="inline-block flex-grow">Examples</h4>
-
-        <p>
-          <a
-            className="no-default"
-            href="/hzwer/iccv2019-learningtopaint/examples"
-          >
-            View more examples
-            <span className="relative -top-0.5">
-              <svg
-                className="icon"
-                fill="none"
-                height="24"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                viewBox="0 0 24 24"
-                width="24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <line x1="7" x2="17" y1="17" y2="7" />
-
-                <polyline points="7 7 17 7 17 17" />
-              </svg>
-            </span>
-          </a>
-        </p>
-      </div>
-      <div className="mb-2lh h-40 overflow-hidden ">
-        <div className="inline-block h-40 w-40 overflow-hidden">
-          <a href="/hzwer/iccv2019-learningtopaint/examples#bjkmjyhddjd6la3sxpzlyuctle">
-            <img
-              alt=""
-              className="object-cover object-center w-full h-full lazy entered exited"
-              src="https://replicate.delivery/mgxm/3107c8fd-00ee-42d1-9334-ed130e0d63a5/out.gif"
-              role="presentation"
-            />
-          </a>
-        </div>
-
-        <div className="inline-block h-40 w-40 overflow-hidden">
-          <a href="/hzwer/iccv2019-learningtopaint/examples#fbbn7fkuavdr3lpdi6p3l7s6pa">
-            <img
-              alt=""
-              className="object-cover object-center w-full h-full lazy entered exited"
-              src="https://replicate.delivery/mgxm/df2d637d-e1ca-42db-a169-6b811f6c2c01/out.gif"
-              role="presentation"
-            />
-          </a>
-        </div>
-      </div>
       <div className="mb-2lh" id="performance">
         <h4 className="mb-lh pb-2 border-b border-hairline">
           Run time and cost
@@ -419,20 +529,71 @@ const IToTDemo = () => {
         </div>
 
         <div className="readme-prose">
+          <h1 id="pytorch-implementation-of-zero-shot-image-to-text-generation-for-visual-semantic-arithmetic">
+            Pytorch Implementation of Zero-Shot Image-to-Text Generation for
+            Visual-Semantic Arithmetic
+          </h1>
+
+          <h2 id="approach">Approach</h2>
+
           <p>
-            We show how to teach machines to paint like human painters, who can
-            use a small number of strokes to create fantastic paintings. By
-            employing a neural renderer in model-based Deep Reinforcement
-            Learning (DRL), our agents learn to determine the position and color
-            of each stroke and make long-term plans to decompose texture-rich
-            images into strokes. Experiments demonstrate that excellent visual
-            effects can be achieved using hundreds of strokes. The training
-            process does not require the experience of human painters or stroke
-            tracking data.
+            <img src="https://raw.githubusercontent.com/YoadTew/zero-shot-image-to-text/main/git_images/Architecture.jpg" />
           </p>
+
+          <h2 id="example">Example</h2>
+
+          <p>
+            <img src="https://raw.githubusercontent.com/YoadTew/zero-shot-image-to-text/main/git_images/teaser.jpg" />
+          </p>
+
+          <h2 id="citation">Citation</h2>
+
+          <p>Please cite our work if you use it in your research:</p>
+
+          <div>
+            <div className="group relative">
+              <pre className="code">
+                <code className="!p-0 hljs language-julia">
+                  <span className="hljs-meta">@article</span>
+                  {`{tewel2021zero,
+            title={Zero-Shot Image-to-`}
+                  <span className="hljs-built_in">Text</span> Generation{" "}
+                  <span className="hljs-keyword">for</span>
+                  {` Visual-Semantic Arithmetic},
+            author={Tewel, Yoad and Shalev, Yoav and Schwartz, Idan and Wolf, Lior},
+            journal={arXiv preprint arXiv:`}
+                  <span className="hljs-number">2111.14447</span>
+                  {`},
+            year={`}
+                  <span className="hljs-number">2021</span>
+                  {`}
+            }`}
+                </code>
+              </pre>
+              <div className="absolute right-2 top-0 bottom-0 h-full opacity-0 group-hover:opacity-100 flex top-2 items-start">
+                <button className="p-2 bg-white border-gray-300 text-gray-800 hover:text-gray-500 focus:outline-none">
+                  <svg
+                    className="lucide lucide-copy"
+                    fill="none"
+                    height="20"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect height="13" rx="2" ry="2" width="13" x="9" y="9" />
+                    <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </article>
-      </>
+    </>
   );
 };
 
